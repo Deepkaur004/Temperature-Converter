@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Converter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="mobile-things">
+            <div id="clock"></div>
+            <i class="fa-solid fa-signal"></i>
+            <i class="fa-solid fa-wifi"></i>
+            <i class="fa-solid fa-battery"></i>
+        </div>
+        <div class="title">Temperature Converter</div>
+        <div class="emoji">
+            <i id="icon" class="fa-solid fa-face-grin"></i>
+            <p id="para"></p>
+        </div>
+
+        <div class="box-container">
+            <div class="box-1">
+                <p>Degree</p>
+                <input type="number" class="takeval">
+            </div>
+            <div class="box-1">
+                <p>Type</p>
+                <select name="" id="unit">
+                    <option value="Farenheit">Farenheit</option>
+                    <option value="Celcius">Celcius</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="value-container">
+            <p>Result</p>
+            <div class="value"></div>
+        </div>
+        <button onclick="temperature()" class="btn">Converte</button>
+        <button onclick="cleardata()" class="btn">Clear</button>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="https://kit.fontawesome.com/b7cf440a8c.js" crossorigin="anonymous"></script>
+</body>
+</html>
